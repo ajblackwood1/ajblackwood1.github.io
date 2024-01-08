@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>fade.rip</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./assets/css.styles" rel="stylesheet">
+    <script src="./assets/rainbowsparkle.js"></script>
+	<script src="./assets/blocks.js"></script>
+    <script src="./assets/antif12.js"></script>
+    <script>
+    function playItHere(e, link) {
+  var audio = document.createElement("audio");
+  var src = document.createElement("source");
+  src.src = "./assets/music/audio.mp3";
+  audio.appendChild(src);
+  audio.volume=0.1;
+  audio.loop=true;
+  audio.play();
+  e.preventDefault();
+    }
+    </script>
+
+</head>
+<body>
+    <p><marquee behavior="scroll" direction="left">Now Playing: Uniivrss - Tell Me U Need Me (sped up)</marquee></p>
+    <a href="https://sins-fn.onrender.com"><img src="./assets/y2kslap.png" class="center">
+    <div class="container">
+   <h1 class="box1 flex items-center justify-center" id="test" onclick="btnclick(), playItHere(event, this)">Click to Enter</h1>
+
+        <h1 class="justify-center">Socials</h1>
+        <a href="https://discord.gg/HyKEM6q7uz">Discord</a>
+        <a href="https://www.youtube.com/channel/UCIJ0GNwEdTPpCZl2WYNLmEA">Youtube</a>
+        <a href="https://github.com/FadeRemix">Github</a>
+        <a href="https://steamcommunity.com/id/FadeRemix/">Steam (MAIN)</a>
+        <a href="https://steamcommunity.com/profiles/76561199161830678/">Steam (CSGO)</a>
+        <a href="https://steamcommunity.com/id/gtaplayer222/">Steam (GTA5)</a>
+        </div>
+
+  <script>
+    const targetDiv = document.getElementById("test");
+    const btn = document.getElementById("test");
+    function btnclick() {
+      if (targetDiv.style.display !== "none") {
+        targetDiv.style.display = "none";
+      } else {
+        targetDiv.style.display = "block";
+      }
+    };
+  </script>
+</body>
+</html>
