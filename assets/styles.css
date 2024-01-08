@@ -1,0 +1,163 @@
+img{
+   width: 100%;
+   max-width: 500px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body {  
+    background: #000;
+    background-size: 250% 250%;
+    font-family: Courier;
+    font-size: 15px;
+    color: #fff;
+    height: 100%;
+    height: 100vh;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden;
+}
+
+.sale {
+    text-shadow: 0 0 10px red;
+}
+
+@keyframes glow {
+    to {
+        text-shadow: 0 0 10px #ffffff;
+    }
+}
+
+h1 {
+    background: url(https://ogu.gg/images/sparkle.gif);
+    font-family: Courier;
+    font-size: 20px;
+    text-align: center;
+    padding: 1px;
+   animation: glow 1.5s infinite alternate;
+}
+
+a {
+    display: block;
+    padding: 2px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s ease;
+    font-size: 15px;
+    text-align: center;
+}
+
+a:hover {
+    outline: none;
+    text-shadow: 0px 2px 5px #fff;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* center vertically */
+    width: 100%; /* make width of element cover entire page */
+    flex: 1;
+}
+
+.box1 {
+       width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        background: #000;
+        align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.rainbow {
+    text-shadow: 2px 2px 4px #000000;
+    animation: rainbow 5s infinite;
+}
+
+@keyframes rainbow{
+    0%{
+    color: red;
+}
+17% {
+    color: orange;
+}
+
+33% {
+    color: yellow;
+}
+50% {
+    color: green;
+}
+67% {
+    color: blue;
+}
+84% {
+    color: purple;
+}
+100% {
+    color: red;
+}
+}
+
+.scroll-left {
+ height: 50px;  
+ overflow: hidden;
+ position: relative;
+}
+.scroll-left p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);    
+ transform:translateX(100%);
+ /* Apply animation to this element */  
+ -moz-animation: scroll-left 10s linear infinite;
+ -webkit-animation: scroll-left 10s linear infinite;
+ animation: scroll-left 10s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%);       
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
+}
